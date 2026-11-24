@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Dashboard</title>
+    <style>
+        body 
+        { font-family: Arial, sans-serif;
+             margin: 20px;
+             background-color: #d4edda;
+             }
+        nav ul { 
+            display: flex;
+             gap: 15px;
+              list-style: none;
+               padding: 0;
+             }
+        .gallery img { width: 250px;
+             height: 150px;
+              object-fit: cover;
+             }
+        form {
+             display: flex;
+             flex-direction: column;
+              gap: 8px;
+               max-width: 300px;
+             }
+    </style>
+</head>
+<body>
+    <nav>
+        <h2><center>KL University</center>
+        </h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div id="home">
+        <h1>Welcome to KL University</h1>
+        <p>Welcome to our university dashboard.</p>
+    </div>
+
+    <section id="courses">
+        <h2>Our Courses</h2>
+        <table border="1" cellpadding="10">
+            <tr><th>S.No</th><th>Course Name</th></tr>
+            <tr><td>1</td><td>AI&amp;ML</td></tr>
+            <tr><td>2</td><td>FEDFW</td></tr>
+            <tr><td>3</td><td>Java</td></tr>
+        </table>
+    </section>
+
+    <section id="gallery">
+        <h2>College Gallery</h2>
+        <marquee>
+            <div class="gallery">
+                <img src="1.jpg" alt="College Building">
+                <img src="2.jpg" alt="College Building">
+                <img src="3.jpg" alt="College Building">
+                <img src="4.jpg" alt="College Building">    
+                <img src="5.jpg" alt="College Building">
+            </div>
+        </marquee>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter Your Phone Number">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Enter Your Message" rows="4"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Thank You for Visiting KL University</p>
+    </footer>
+</body>
+</html>
